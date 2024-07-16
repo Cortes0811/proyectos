@@ -1,0 +1,209 @@
+---
+import CodeIcon from "../components/Icons/Code.astro";
+import UserIcon from "../components/Icons/User.astro";
+import StudyIcon from "../components/Icons/Study.astro";
+import Tstudy from "../components/T-Study.astro"
+
+import HTML from "./Icons/HTML.astro";
+import CSS from "./Icons/CSS.astro";
+import JavaScript from "./Icons/JavaScript.astro";
+import React from "./Icons/React.astro";
+import AstroIcon from "./Icons/AstroIcon.astro";
+import PHP from "./Icons/PHP.astro";
+import Tailwind from "./Icons/Tailwind.astro";
+import GitHub from "./Icons/GitHub.astro";
+import Git from "./Icons/Git.astro";
+import Bootstrap from "./Icons/Bootstrap.astro";
+
+---
+
+<div id="accordion-open" data-accordion="open">
+  <h2 id="accordion-open-heading-1">
+    <button
+      type="button"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right bg-white/5 text-gray-500 border border-b-0 border-white/10 rounded-t-xl focus:text-gray-500  hover:bg-white/10  gap-3"
+      data-accordion-target="#accordion-open-body-1"
+      aria-expanded="false"
+      aria-controls="accordion-open-body-1"
+    >
+      <span class="flex items-center gap-x-2 text-gray-500"><UserIcon />¿Quién soy yo?</span>
+      <svg
+        data-accordion-icon
+        class="w-3 h-3 rotate-180 shrink-0"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5 5 1 1 5"></path>
+      </svg>
+    </button>
+  </h2>
+  <div
+    id="accordion-open-body-1"
+    class="hidden"
+    aria-labelledby="accordion-open-heading-1"
+  >
+    <div class="p-5 border border-b-0 border-white/10 ">
+      <p class="text-base md:text-lg lg:text-xl mb-2 text-gray-500 dark:text-gray-400">
+        Soy un joven desarrollador web junior de 18 años de edad, con una gran pasión por la tecnología y un entusiasmo por aprender y crecer en el ámbito profesional. Me considero una persona proactiva, autodidacta y con una gran capacidad para trabajar en equipo.
+      </p>
+    </div>
+  </div>
+  <h2 id="accordion-open-heading-2">
+    <button
+      type="button"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right bg-white/5 text-gray-500 border border-b-0 border-white/10 focus:text-gray-500  hover:bg-white/10 gap-3"
+      data-accordion-target="#accordion-open-body-2"
+      aria-expanded="false"
+      aria-controls="accordion-open-body-2"
+    >
+      <span class="flex items-center gap-x-2 text-gray-500"><StudyIcon />Mis Estudios</span>
+      <svg
+        data-accordion-icon
+        class="w-3 h-3 rotate-180 shrink-0"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5 5 1 1 5"></path>
+      </svg>
+    </button>
+  </h2>
+  <div
+    id="accordion-open-body-2"
+    class="hidden"
+    aria-labelledby="accordion-open-heading-2"
+  >
+    <div class="p-5 border border-b-0 border-white/10">
+      <Tstudy/>
+    </div>
+  </div>
+  <h2 id="accordion-open-heading-3">
+    <button
+      type="button"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right bg-white/5 text-gray-500 border border-b-0 border-white/10 rounded-b-xl focus:text-gray-500  hover:bg-white/10  gap-3"
+      data-accordion-target="#accordion-open-body-3"
+      aria-expanded="false"
+      aria-controls="accordion-open-body-3"
+    >
+      <span class="flex items-center gap-x-2 text-gray-500"><CodeIcon />Habilidades</span>
+      <svg
+        data-accordion-icon
+        class="w-3 h-3 rotate-180 shrink-0"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5 5 1 1 5"></path>
+      </svg>
+    </button>
+  </h2>
+  <div
+    id="accordion-open-body-3"
+    class="hidden"
+    aria-labelledby="accordion-open-heading-3"
+  >
+    <div class="p-5 border border-t-0 border-white/10 rounded-b-xl">
+      <ul class="grid grid-cols-2 gap-y-3 md:grid-cols-4 md:gap-y-3 lg:grid-cols-8 gap-x-2 mb-4 place-items-center">
+        <li>
+          <span
+            class={`flex gap-x-2 rounded-full text-xs bg-[#8a3331] text-white py-1 px-2`}
+          >
+            <HTML class="size-4" />
+            HTML
+          </span>
+        </li>
+        <li>
+          <span
+            class={`flex gap-x-2 rounded-full text-xs bg-[#208cba] text-white py-1 px-2`}
+          >
+            <CSS class="size-4" />
+            CSS
+          </span>
+        </li>
+        <li>
+          <span
+            class={`flex gap-x-2 rounded-full text-xs bg-[#ae891a] text-white py-1 px-2`}
+          >
+            <JavaScript class="size-4" />
+            JavaScript
+          </span>
+        </li>
+        <li>
+          <span
+            class={`flex gap-x-2 rounded-full text-xs bg-[#7a86b8] text-white py-1 px-2`}
+          >
+            <PHP class="size-4" />
+            PHP
+          </span>
+        </li>
+        <li>
+          <span
+            class={`flex gap-x-2 rounded-full text-xs bg-[#1f5180] text-white py-1 px-2`}
+          >
+            <React class="size-4" />
+            React
+          </span>
+        </li>
+        <li>
+          <span
+            class={`flex gap-x-2 rounded-full text-xs bg-[#8a3331] text-white py-1 px-2`}
+          >
+            <AstroIcon class="size-4" />
+            Astro
+          </span>
+        </li>
+        <li>
+          <span
+            class={`flex gap-x-2 rounded-full text-xs bg-[#003159] text-white py-1 px-2`}
+          >
+            <Tailwind class="size-4" />
+            Tailwind
+          </span>
+        </li>
+        <li>
+          <span
+            class={`flex gap-x-2 rounded-full text-xs bg-[#563d7c] text-white py-1 px-2`}
+          >
+            <Bootstrap class="size-4" />
+            Bootstrap
+          </span>
+        </li>
+        <li>
+          <span
+            class={`flex gap-x-2 rounded-full text-xs bg-[#6c2b18] text-white py-1 px-2`}
+          >
+            <Git class="size-4" />
+            Git
+          </span>
+        </li>
+        <li>
+          <span
+            class={`flex gap-x-2 rounded-full text-xs bg-[#4f5457] text-white py-1 px-2`}
+          >
+            <GitHub class="size-4" />
+            GitHub
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

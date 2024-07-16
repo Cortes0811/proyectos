@@ -1,0 +1,88 @@
+---
+import SectionContainer from "../components/SectionContainer.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInIcon from "../components/Icons/LinkedIn.astro";
+import GitHubIcon from "../components/Icons/GitHub.astro";
+import MailIcon from "../components/Icons/Mail.astro";
+import PDFIcon from "../components/Icons/Document.astro";
+import SocialPill from "../components/SocialPill.astro";
+import SobreMi from "../components/SobreMi.astro";
+import Proyectos from "../components/Proyectos.astro";
+import Footer_ from "../components/Footer_.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Bienvenido al Portafolio de Omar CR">
+  <main>
+    <SectionContainer>
+      <div class="w-full grid md:grid-cols-2 opa gap-x-20">
+        <div class="basis-1/2">
+          <div class="grid lg:grid-cols-3 gap-x-4 pb-6 lg:pb-10">
+            <h1 class="text-white text-2xl lg:text-4xl font-bold col-span-2">
+              Hola! Soy Omar
+            </h1>
+            <p class="flex lg:justify-center items-center opa mt-2">
+              <Badge class="">Desarrollador web</Badge>
+            </p>
+          </div>
+          <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+            <span class="text-yellow-200/90">
+              Desarrolador Web Jr y Estudiante.</span
+            >
+            <span class="text-red-200/90">Estado de Mexico</span>
+            <span class="opacity-75"
+              ><br />Especializado en crear sitios únicos.</span
+            >
+          </h2>
+          <nav class="flex gap-4 mt-8 flex-wrap">
+            <SocialPill href="https://linkedin.com/in/omar-cortes-4b598929a">
+              <LinkedInIcon class="size-4 md:size-6" />
+              LinkedIn
+            </SocialPill>
+            <SocialPill href="https://github.com/Cortes0811">
+              <GitHubIcon class="size-4 md:size-6" />
+              GitHub
+            </SocialPill>
+            <SocialPill href="mailto:omarcr0811@gmail.com">
+              <MailIcon class="size-4 md:size-6" />
+              omarcr0811@gmail.com
+            </SocialPill>
+            <SocialPill href="https://drive.google.com/file/d/1bEENGSqFl-5TtsKs0qsXJ_Zcv2Cr9ctX/view?usp=sharing">
+              <PDFIcon class="size-4 md:size-6" />
+              CV - PDF
+            </SocialPill>
+          </nav>
+        </div>
+        <div
+          class="basis-1/2 mb-1 md:justify-self-center order-first md:order-last"
+        >
+          <img
+            src="/photos/photoOmar.png"
+            alt="Foto de Omar"
+            class="h-16 md:h-80 mt-6 rounded-full"
+          />
+        </div>
+      </div>
+    </SectionContainer>
+    <SectionContainer id="sobre-mi">
+      <h2 class="text-2xl font-semibold mb-10">Sobre Mi</h2>
+      <SobreMi />
+    </SectionContainer>
+    <SectionContainer id="proyectos">
+      <h2 class="text-2xl font-semibold mb-10">Proyectos</h2>
+      <Proyectos />
+    </SectionContainer>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>

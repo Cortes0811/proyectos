@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+}
+.materialboxed {
+    display: block;
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    position: relative;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+  }
+  
+  .materialboxed:hover:not(.active) {
+    opacity: .8;
+  }
+  
+  .materialboxed.active { 
+    cursor: -webkit-zoom-out;
+    cursor: zoom-out;
+  }
+  
+  #materialbox-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #292929;
+    z-index: 1000;
+    will-change: opacity;
+  }
+  
+  .materialbox-caption {
+    position: fixed;
+    display: none;
+    color: #fff;
+    line-height: 40px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0% 15%;
+    height: 50px;
+    z-index: 1000;
+    -webkit-font-smoothing: antialiased;
+  }
+
+#materialbox-overlay {
+    background: rgb(0, 0, 0, .8);
+}
+
+
+
+.materialbox-caption {
+    bottom: 10px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin: auto;
+    background: blue;
+    font-size: 20px;
+}
+
+.Contenedor {
+    padding: 5px;
+}
+.Sec_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+}
+.text {
+    padding-left: 50px;
+    padding-top: 100px;
+}
+.text h1 {
+    font-size: 40px;
+}
+
+.text h3 {
+    color: #727272;
+    margin-top: 8px;
+    font-size: 22px;
+}
+
+.text  hr {
+    margin-top: 15px;
+    background-color: blue;
+    height: 7px;
+}
+.Sec_2 hr{
+    display: none;
+}
+
+.product_image {
+    padding-top: 20px;
+    padding-left: 200px;
+}
+
+.product_image img {
+    height: 250px;
+    width: 250px;
+    cursor: pointer;
+}
+.product_image img:hover {
+     border: #727272 solid 2px;
+}
+
+hr {
+    background: #D5D5D5;
+    height: 12px;
+
+}
+
+.Sec_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}
+
+.Sec_2 span {
+    color:blue;
+    font-weight: 900;
+}
+.Description,
+.Composicion,
+.Datos_Tecnicos {
+    margin: 10px; 
+    
+}
+
+.Composicion{
+    border-right: blue solid 5px;
+    text-align: center;
+    border-left: blue 5px solid;
+}
+
+.Description h2,
+.Composicion h2,
+.Datos_Tecnicos h2 {
+    padding-left: 15px;
+    padding-bottom: 18px;
+    padding-top: 10px;
+} 
+
+.Description li,
+.Composicion li,
+.Datos_Tecnicos li {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.content {
+    margin-top: 0px;
+}
+
+@media (max-width:479px) {
+    .Sec_1 {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .text {
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    .product_image {
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+    .Sec_2 {
+        grid-template-columns: 1fr;
+    }
+    .Sec_2 hr {
+        display: block;
+    }
+    .Composicion {
+        border: none;
+        text-align: left;
+    }
+}
+@media (max-width:380px) {
+    
+   }

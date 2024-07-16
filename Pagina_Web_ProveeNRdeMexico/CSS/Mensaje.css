@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.fondo{
+    background: url(/IMG/Industrial-1-1.jpg);
+    height: 100%;
+    
+}
+.fondo:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: black;
+    opacity: 0.9;
+}
+
+.recuadro {
+    background: white;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-top: 20%;
+    
+}
+
+.recuadro {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding: 10px;
+    border: blue 3px solid;
+}
+.texto {
+padding-top: 30px;
+}
+
+.texto h2 {
+    font-size: 30px;
+    
+}
+.texto p {
+    margin-top: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+.imagen img {
+    margin-top: 60px;
+    margin-left: 70px;
+}
+ i  {
+    color: gray;
+    font-size: 30px;
+    padding: 5px;
+}
+i:hover {
+    background-color: #cacaca;
+    border-radius: 100%;
+    transition: 1.5s;
+}
+.Inicio {
+    display: flex;
+}
+.Inicio p {
+    margin-top: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.fondo .recuadro .texto hr {
+    background-color: blue;
+    height: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1118px) {
+
+}
+@media (max-width: 860px) {
+.recuadro {
+    width: 75%;
+    margin-left: 12.5%;
+}
+}
+
+
+@media (max-width: 700px) {
+
+   
+}
+@media (min-width:700 px) {
+
+}
+
+@media (max-width:479px) {
+    .recuadro {
+        height: auto;
+        grid-template-columns: 1fr;
+        
+    }
+    .Inicio {
+        margin-left: 120px;;
+    }
+    .imagen img {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width:380px) {
+.texto h2 {
+    font-size: 20px;
+    text-align: center;
+}
+.recuadro {
+    padding: 0;
+    
+}
+.texto hr {
+    margin-top: 10px;
+    width: 95%;
+    
+}
+.texto p {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+.Inicio p {
+    margin-left: 0;
+}
+.Inicio {
+    margin-left: 100px;
+}
+.imagen img {
+    margin-left: 15px;
+}
+}

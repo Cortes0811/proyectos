@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+}
+
+.Portada {
+    background: url(../IMG/IMG-20200630-WA0003.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.Portada:before {
+    content: "";
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    background: black;
+    opacity: 0.4;
+}
+
+.Portada h2 {
+    position: absolute;
+    margin-top: 300px;
+    font-size: 60px;
+    margin-left: 100px;
+    color: white;
+}
+
+.menu {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    background: #0068FF;
+}
+
+.menu ul {
+    float: left;
+    padding-left: 250px;
+}
+.Contenido {
+    height: auto;
+}
+
+.Contenido h2 {
+    font-size: 30px;
+    margin-left: 30px;
+    padding-bottom: 10px;
+}
+
+hr {
+    height: 10px;
+    background-color: blue;
+    width: 75%;
+    margin-left: 25px;
+}
+
+.Descripcion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.imagen_ img {
+    width: 500px;
+    height: 250px;
+    margin-left: 150px;
+}
+
+.image_1 {
+    text-align: center;
+    margin-top: 50px;
+
+}
+.image_1 img {
+    width: 500px;
+    height: 250px;
+}
+.texto {
+    padding-top: 50px;
+    padding-right: 200px;
+}
+
+.texto p {
+    margin-left: -70px;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+}
+
+.Catalogo  {
+    color: blue;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.Catalogo a {
+    font-weight: 900;
+}
+.final {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.Productos {
+ padding: 30px;
+ margin-top: 50px;
+ margin-left: 150px;
+ height: auto;
+}
+.Productos  li {
+    display: flex;
+    
+}
+.Productos li h3 {
+    margin: 10px;
+    margin-right: 15px;
+    font-size: 23px;
+    background: yellow;
+}
+
+.Productos li p {
+    color: black;
+    margin-top: 13px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+
+.Recuadro {
+    height: 270px;
+    width: 200px;
+    border: gray solid 1px;
+}
+.Recuadro .tiles-image img{
+    width: 190px;
+    height: 200px;
+    padding-left: 5px;
+}
+
+@media (max-width: 1118px) {
+    .imagen_  img{
+        margin-left: 35px;
+    }
+
+    .texto p {
+        margin-left: -150px;
+    }
+    
+    .menu ul {
+        padding-left: 150px;
+    }
+    
+    .Productos {
+        margin-left: 00px;
+    }
+   
+}
+@media (max-width: 994px) {
+    
+    .Productos li {
+        display: inline;
+        
+    }
+
+}
+
+   
+
+@media (max-width: 860px) {
+    .menu ul {
+        padding-left: 0px ;
+        font-size: 13px;
+    }
+     .texto p {
+         padding-left: 30px;
+         margin-top: -40px;
+     }
+     .Productos {
+         margin-left: 0;
+     }
+    
+     .menu {
+         display: none;
+     }
+     #Sec_1 {
+         margin-top: 50px;
+     }
+     .Portada h2 {
+        font-size: 60px;
+        margin-top: 170px;
+    }
+}
+@media (max-width:700px) {
+   .Portada h2 {
+       font-size: 50px;
+       margin-top: 170px;
+   }
+
+   .menu {
+       display: none;
+   }
+
+   .texto p {
+       font-size: 16px;
+       padding-left: 100px;
+   }
+   .Descripcion {
+       grid-template-columns: 1fr;
+       height: auto;
+       text-align: center;
+   }
+
+   
+
+   .Descripcion .texto {
+       margin-top: 30px;
+       text-align: center;
+    
+   }
+
+   .Descripcion .texto p {
+    margin: 0;
+    padding: 0;
+    
+   }
+
+   .image_1 img {
+    width: 500px;
+    height: 250px;
+   }
+}

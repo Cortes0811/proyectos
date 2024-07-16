@@ -1,0 +1,73 @@
+---
+import MenuIcon from "./Icons/Menu.astro";
+import Close from "./Icons/Close.astro";
+---
+
+<div class="grid grid-flow-col pt-5">
+  <p id="menu-text" class="text-4xl float-left pl-8 hidden md:hidden text-white">Menu</p>
+  <MenuIcon
+    id="menu-button"
+    onclick="onToggleMenu(this)"
+    class="justify-self-end size-8 mr-14 cursor-pointer md:hidden text-white"
+  />
+  <Close
+    id="menu-button-close"
+    onclick="onToggleMenu(this)"
+    class="justify-self-end size-8 mr-14 cursor-pointer hidden md:hidden text-white"
+  />
+</div>
+<header
+  class="flex justify-center items-center py-5 w-full xl:w-[1120px] mx-auto md:mb-44"
+>
+  <nav
+    id="menu-open"
+    class="flex flex-col hidden text-white bg-white/5 min-h-[30vh] w-full gap-y-8 items-center pt-8 md:inline-flex md:flex-row md:gap-x-10 md:bg-inherit md:w-auto md:min-h-0 opacity-80"
+  >
+    <a onclick="onToggleMenu(this)" id="menu-op1" href="#">Inicio</a>
+    <a onclick="onToggleMenu(this)" id="menu-op2" href="#sobre-mi">Sobre Mi</a>
+    <a onclick="onToggleMenu(this)" id="menu-op3" href="#proyectos">Proyectos</a>
+  </nav>
+</header>
+
+<script>
+  const button = document.querySelector("#menu-button") as Element;
+  const menuClose = document.querySelector("#menu-button-close") as Element;
+  const menuOpen = document.querySelector("#menu-open") as Element;
+  const menuText = document.querySelector("#menu-text") as Element;
+  const menuOp1 = document.querySelector("#menu-op1") as Element;
+  const menuOp2 = document.querySelector("#menu-op2") as Element;
+  const menuOp3 = document.querySelector("#menu-op3") as Element;
+  const menuOp4 = document.querySelector("#menu-op4") as Element;
+
+  button.addEventListener("click", () => {
+    menuOpen.classList.toggle("hidden");
+    menuText.classList.toggle("hidden");
+    menuOpen.classList.add("bg-white/5");
+    button.classList.toggle("hidden");
+    menuClose.classList.toggle("hidden");
+  });
+  menuClose.addEventListener("click", () => {
+    menuOpen.classList.toggle("hidden");
+    menuText.classList.toggle("hidden");
+    button.classList.toggle("hidden");
+    menuClose.classList.toggle("hidden");
+  });
+  menuOp1.addEventListener("click", () => {
+    menuOpen.classList.toggle("hidden");
+    menuText.classList.toggle("hidden");
+    button.classList.toggle("hidden");
+    menuClose.classList.toggle("hidden");
+  });
+  menuOp2.addEventListener("click", () => {
+    menuOpen.classList.toggle("hidden");
+    menuText.classList.toggle("hidden");
+    button.classList.toggle("hidden");
+    menuClose.classList.toggle("hidden");
+  });
+  menuOp3.addEventListener("click", () => {
+    menuOpen.classList.toggle("hidden");
+    menuText.classList.toggle("hidden");
+    button.classList.toggle("hidden");
+    menuClose.classList.toggle("hidden");
+  });
+</script>

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+}
+
+.Contenedor {
+    padding: 5px;
+}
+.Sec_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 400px;
+}
+.text {
+    padding-left: 50px;
+    padding-top: 100px;
+}
+.text h1 {
+    font-size: 40px;
+}
+
+.text h3 {
+    color: #727272;
+    margin-top: 8px;
+    font-size: 22px;
+}
+
+.text  hr {
+    margin-top: 15px;
+    background-color: blue;
+    height: 7px;
+}
+.Sec_2 hr{
+    display: none;
+}
+
+.product_image {
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.product_image img {
+    height: 250px;
+    width: 450px;
+    cursor: pointer;
+}
+.product_image img:hover {
+     border: #727272 solid 2px;
+}
+
+hr {
+    background: #D5D5D5;
+    height: 12px;
+
+}
+
+.Sec_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+   
+}
+
+.Sec_2 span {
+    color:blue;
+    font-weight: 900;
+}
+.Description,
+.Composicion,
+.Datos_Tecnicos {
+    margin: 10px; 
+    
+}
+
+.Description{
+    border-right: blue solid 5px;
+}
+
+.Description h2,
+.Composicion h2,
+.Datos_Tecnicos h2 {
+    padding-left: 15px;
+    padding-bottom: 18px;
+    padding-top: 10px;
+} 
+
+.Description li,
+.Composicion li,
+.Datos_Tecnicos li {
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+@media (max-width:700px) {
+    .product_image img {
+        width: 350px;
+    }
+}
+
+@media (max-width:479px) {
+    .Sec_1 {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .text {
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    .product_image {
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+    .Sec_2 {
+        grid-template-columns: 1fr;
+    }
+    .Sec_2 hr {
+        display: block;
+    }
+    .Composicion,
+    .Description {
+        border: none;
+        text-align: left;
+    }
+    .Description {
+        border-bottom: #d5d5d5 10px solid;
+    }
+}
+@media (max-width:380px) {
+    
+   }

@@ -1,0 +1,98 @@
+---
+import HTML from './Icons/HTML.astro';
+import CSS from './Icons/CSS.astro';
+import JavaScript from './Icons/JavaScript.astro';
+import Java from './Icons/Java.astro';
+import Firebase from './Icons/Firebase.astro';
+import PHP from './Icons/PHP.astro';
+
+const TAGS = {
+ 
+    HTML: {
+    name: "HTML",
+    class: "bg-[#8a3331] text-white",
+    icon: HTML,
+    },
+    CSS: {
+    name: "CSS",
+    class: "bg-[#208cba] text-white",
+    icon: CSS,
+    },
+    JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#ae891a] text-white",
+    icon: JavaScript,
+    },
+    PHP: {
+    name: "PHP",
+    class: "bg-[#7a86b8] text-white",
+    icon: PHP,
+    },
+    JAVA: {
+    name: "Java",
+    class: "bg-white text-black",
+    icon: Java,
+    },
+    FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#1a73e8] text-white",
+    icon: Firebase,
+    }
+};
+const PROJECTS = [
+  {
+    title: "Desarrollo de una Pagina Web",
+    description:
+      "Trabajé en el Diseño, Estructura y Programación de una página web para una empresa que vende y comercializa Productos Químicos Industriales.",
+    time: " - 2020 - Vigente",
+    image: "/photos/proyect1.png",
+    arg: ["Diseño y formato de la Pagina Web en Figma.","Diseño Responsive para el uso en dispositivos móviles.","Contratación del Hosting y Dominio.","Mantenimiento de la Pagina Web."],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.PHP],
+  },
+  {
+    title: "Desarrollo de una Aplicacion Movil",
+    description:
+      "Trabaje como programador dentro de un equipo escolar en el desarrollo de una aplicación móvil, la cual consistía en una biblioteca de Juegos donde la información se almacena en una base de datos en línea.",
+    time: " - 2023 ",
+    image: "/photos/proyect2.png",
+    arg: ["Diseño y estructura de la Base de Datos.","Dar funcionamiento a las ventas de registro e inicio de sesión de usuario.","Participación en el Diseño de Interfaces de la aplicación móvil."],
+    tags: [TAGS.JAVA, TAGS.FIREBASE],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ title, description, time, arg, tags, image }) => (
+    <article class="mb-8">
+        <div class="grid md:grid-flow-col md:gap-x-8 gap-y-8 ">
+            <div>
+                <h3 class="text-1xl lg:text-2xl font-semibold text-white mb-4">{title} <span class="text-white/40 font-normal text-xl"> {time}</span></h3>
+                <ul class="flex gap-x-2 gap-y-2 flex-row flex-wrap mb-4">
+                {tags.map((tag) => (
+                <li>
+                    <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
+                    <tag.icon class="size-3 md:size-4"/>
+                    {tag.name}
+                    </span>
+                </li>
+                ))}
+                </ul>
+                <p class="text-base lg:text-lg mb-4 text-pretty text-gray-500 ">{description}</p>
+                <ul class="list-disc list-inside text-sm lg:text-base text-gray-500">
+                   {arg?.map((item) => (
+                    <li>{item}</li>
+                   ))}
+                </ul>
+            </div>
+            <div class="self-center flex justify-center">
+                <img
+                class="rounded shadow-2xl shadows-white/10 h-52"
+                src={image}
+                alt={`Captura de pantalla del pryecto ${image}`}
+                />
+            </div>
+        </div>
+      
+    </article>
+  ))
+}

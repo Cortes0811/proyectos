@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+}
+
+.Portada {
+    background: url(../IMG/CONTINENTAL/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    height: 400px;
+}
+
+.Portada:before {
+    content: "";
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    background: black;
+    opacity: 0.4;
+}
+
+.Portada h2 {
+    position: absolute;
+    margin-top: 300px;
+    font-size: 60px;
+    margin-left: 100px;
+    color: white;
+}
+.desc {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+.desc p {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.menu {
+    margin-bottom: 0px;
+    background:#F1C40F;
+    height: 100px;
+   
+    margin-bottom: 25px;
+    
+}
+.mobil {
+    
+    display: none;
+    
+    color: #fff;
+    width: 100%;
+    
+    
+    text-align: center;
+   height: auto;
+}
+.mobil a {
+    background: #F1C40F;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20%;
+    text-align: center
+}
+.menu ul {
+    float: left;
+    margin-left: 450px;
+    color: #fff;
+}
+.menu ul i {
+    font-size: 30px;
+    
+}
+.menu ul li {
+    height: 30px;
+    
+}
+.menu ul li a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 100px;
+    margin-top: -30px;
+    
+}
+
+
+
+.title_1 {
+margin-left: 30px;
+font-size: 20px;
+padding-bottom: 20px;
+}
+
+.Contenido {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.Contenido .division {
+    background-color: yellow;
+    width: 100%;
+    border: none;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.Contenido h2 {
+    font-size: 40px;
+    margin-left: 30px;
+    padding-bottom: 10px;
+    
+}
+.Contenido h2 span {
+    color: blue;
+    font-size: 60px;
+}
+
+hr {
+    border: none;
+    height: 10px;
+    background-color: blue;
+    width: 75%;
+    margin-left: 25px;
+}
+
+.Descripcion {
+    
+    height: auto;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+.imagen_ img {
+    width: 80%;
+    margin-left: 50px;
+}
+.texto {
+    padding-top: 50px;
+    width: 80%;
+}
+
+.texto p {
+    margin: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+}
+
+.Catalogo  {
+    color: #F1C40F;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+   margin-top: 30px;
+    
+}
+.Catalogo a {
+    font-weight: 900;
+    color: #F1C40F;
+}
+.final {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.Productos {
+ padding: 30px;
+ margin-top: 20px;
+ margin-left: 50px;
+ height: auto;
+ 
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+}
+.caja {
+    height: auto;
+    width: 300px;
+    border: blue 10px solid;
+    cursor: pointer;
+    margin-bottom: 30px;
+    
+}
+.caja:hover {
+    content: "";
+   border: blue 10px solid;
+   transition: 1s;
+   color: black;
+   transform: scale(1.2);
+}
+.caja_desc {
+    height: auto;
+    width: 300px;
+    border: blue 7px solid;
+}
+.caja_desc p {
+    padding: 10px;
+    font-weight: bolder;
+}
+.caja_desc p span {
+    color: blue;
+    font-weight: 700;
+}
+.caja_desc img {
+    width: 300px;
+}
+.caja p i {
+    color: red;
+}
+.caja p {
+    
+    font-family:'Anton', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+.Productos  li {
+    display: flex;
+}
+.Productos li h3 {
+    margin: 10px;
+    margin-right: 15px;
+    font-size: 23px;
+    background: yellow;
+}
+
+.Productos li p {
+    color: black;
+    margin-top: 13px;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.Productos li p span {
+    color: #F1C40F;
+    font-weight: 900;
+}
+
+
+
+.Recuadro {
+    height: 270px;
+    width: 200px;
+    border: gray solid 1px;
+}
+.Recuadro .tiles-image img{
+    width: 190px;
+    height: 200px;
+    padding-left: 5px;
+}
+
+@media (max-width: 1118px) {
+    .menu {
+        display: none;
+    } 
+    .mobil {
+        display: inline;
+    }
+    .Productos {
+        transform: scale(1.0);
+    }
+    .imagen_ img {
+        margin-left: 0px;
+    }
+    .Productos {
+        margin-left: 0;
+    }
+    .menu {
+        height: 190px;
+    }
+}
+   
+ @media (max-width: 994px) {
+       .menu ul {
+           padding-left: 50px;
+       }
+       .menu {
+           height: 190px;
+           margin-bottom: 50px;
+       
+     }
+    
+       
+    
+    @media (max-width: 860px) {
+        .Productos {
+            padding-left: 0px;
+            transform: scale(.9);
+        }
+       
+       #Sec_1 {
+           margin-top: 50px;
+       }
+       .Portada h2 {
+        font-size: 60px;
+        margin-top: 170px;
+    }
+   
+    }
+    @media (max-width:700px) {
+        .caja {
+            margin-top: 20px;
+        }
+        .Portada h2 {
+            font-size: 50px;
+            margin-top: 170px;
+        } 
+        .Productos {
+            grid-template-columns: 1fr;
+        }
+        .texto p {
+        padding-left: 20px;
+
+        }
+        .texto {
+            padding-top: 0;
+        }
+       
+    }
+    @media (max-width:479px) {
+
+        .Portada {
+            background-size: cover;
+        }
+
+        .desc {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            margin-bottom: 10px;
+        }
+        .desc p {
+            line-height: 35px;
+            font-size: 20px;
+        }
+
+        .check {
+            display:inline-block;
+        }
+        .Descripcion {
+            grid-template-columns: 1fr;
+            height: auto;
+            width: auto;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+    
+        }
+        .Descripcion .imagen_ img {
+            margin-left: 0;
+        }
+        .Portada h2 {
+            font-size: 50px;
+            margin-top: 120px;
+        }
+       .texto p {
+           padding: 0;
+           margin-left: 0;
+           margin-top: 0px;
+           
+       }
+       .texto {
+        padding: 0;
+        margin-left: 0;
+        margin-top: 0px;
+        
+    }
+       }
+    
+       @media (max-width:380px) {
+        .Portada h2 {
+            text-align: center;
+            font-size: 45px;
+            margin-left: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        #Sec_1 {
+            margin-top: 0;
+        }
+        .Contenido h2 {
+            margin-left: 0;
+        }
+       
+    
+    }
+}
